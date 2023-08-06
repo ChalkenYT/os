@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Virtual PC</title>
+  <title>ChalkenOS</title>
   <style>
     footer {
       position: absolute;
@@ -25,6 +25,18 @@
     }
     .power:hover {
       color: darkgrey;
+    }
+    .help {
+      border: solid 5px;
+      border-radius: 90px;
+      width: 50px;
+      height: auto;
+      position: relative;
+      top: 2px; 
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 9999;
+      left: 2px;   
     }
     body {
       background-image: url("images/space.jpg");
@@ -110,7 +122,18 @@
       position: relative;
       top: 100px;
     }
-    
+    .chatgpt {
+      border: solid 5px;
+      border-radius: 90px;
+      width: 50px;
+      height: auto;
+      position: relative;
+      top: 325px;
+      right: 188px;
+    }    
+    .chatgpt:hover {
+      color:darkgrey;
+    }
     .docs {
       border: solid 5px;
       border-radius: 90px;
@@ -131,8 +154,13 @@
       right: 126px;
     }
     
+    
     .bing:hover {
       color: darkgray;
+    }
+    
+    .help:hover {
+      color:darkgrey
     }
     
     .docs:hover {
@@ -180,8 +208,16 @@
   <img src="images/bing.jfif" class="bing">
   <img src="images/gdocs.png" class="logo docs">
   <img src="images/youtube.png" class="logo youtube">
+  <img src="images/chatgpt.png" class="chatgpt">
   <footer>
     <img src="images/Pbutton.png" class="power">
+    <img src="images/question.png" class="help">
   </footer>
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1137408576143503460', // Aura Updates
+        channel: '1137408576688771106' // Updates channel
+    })
+  </script>
 </body>
 </html>
