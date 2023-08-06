@@ -3,6 +3,8 @@
       var nowggLogo = document.querySelector(".docs");
       var youtubeLogo = document.querySelector(".youtube");
       var powerbutton = document.querySelector(".power");
+      var chatgpt = document.querySelector(".chatgpt")
+      var helpbutton = document.querySelector(".help")
       var iframeContainer = null;
       var iframe = null;
       var isResizing = false;
@@ -20,7 +22,12 @@
         console.log("End");
       });
 
-
+      chatgpt.addEventListener("click", function() {
+        openIframe("https://huggingface.co/chat/");
+      });
+      helpbutton.addEventListener("click", function() {
+        openIframe("https://os.chalken.repl.co/help.html");
+      });
       bingLogo.addEventListener("click", function() {
         openIframe("https://www.bing.com");
       });
